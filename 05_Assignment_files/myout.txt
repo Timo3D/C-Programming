@@ -1,0 +1,55 @@
+Invalid input!
+
+Invalid input!
+
+Invalid input!
+
+Invalid input!
+
+Invalid input!
+
+Invalid input!
+
+Invalid input!
+
+The temperature is 100*c, humidity is 50%.
+
+The temperature is 35*c, humidity is 50%.
+
+The temperature is 30*c, humidity is 50%.
+
+The temperature is 20*c, humidity is 50%.
+
+The temperature is 15*c, humidity is 50%.
+
+The temperature is 12*c, humidity is 50%.
+
+Invalid input!
+
+The temperature is 100*c, humidity is 40%.
+
+The temperature is 35*c, humidity is 40%.
+
+The temperature is 30*c, humidity is 40%.
+
+The temperature is 20*c, humidity is 40%.
+
+The temperature is 15*c, humidity is 40%.
+
+The temperature is 12*c, humidity is 40%.
+
+Invalid input!
+
+The temperature is 100*c, humidity is 23%.
+
+The temperature is 35*c, humidity is 23%.
+
+The temperature is 30*c, humidity is 23%.
+
+The temperature is 20*c, humidity is 23%.
+
+The temperature is 15*c, humidity is 23%.
+
+The temperature is 12*c, humidity is 23%.
+
+Invalid input!
