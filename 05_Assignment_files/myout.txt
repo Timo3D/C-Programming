@@ -12,44 +12,62 @@ Invalid input!
 
 Invalid input!
 
-The temperature is 100*c, humidity is 50%.
+The temperature is 100*C, humidity is 50%.
+The best sleeping bag is Summer type insulated with Synthetic.
 
-The temperature is 35*c, humidity is 50%.
+The temperature is 35*C, humidity is 50%.
+The best sleeping bag is Summer type insulated with Synthetic.
 
-The temperature is 30*c, humidity is 50%.
+The temperature is 30*C, humidity is 50%.
+The best sleeping bag is Summer type insulated with Synthetic.
 
-The temperature is 20*c, humidity is 50%.
+The temperature is 20*C, humidity is 50%.
+The best sleeping bag is 3-Season type insulated with Synthetic.
 
-The temperature is 15*c, humidity is 50%.
+The temperature is 15*C, humidity is 50%.
+The best sleeping bag is 3-Season type insulated with Synthetic.
 
-The temperature is 12*c, humidity is 50%.
-
-Invalid input!
-
-The temperature is 100*c, humidity is 40%.
-
-The temperature is 35*c, humidity is 40%.
-
-The temperature is 30*c, humidity is 40%.
-
-The temperature is 20*c, humidity is 40%.
-
-The temperature is 15*c, humidity is 40%.
-
-The temperature is 12*c, humidity is 40%.
+The temperature is 12*C, humidity is 50%.
+The best sleeping bag is Winter type insulated with Synthetic.
 
 Invalid input!
 
-The temperature is 100*c, humidity is 23%.
+The temperature is 100*C, humidity is 40%.
+The best sleeping bag is Summer type insulated with Down.
 
-The temperature is 35*c, humidity is 23%.
+The temperature is 35*C, humidity is 40%.
+The best sleeping bag is Summer type insulated with Down.
 
-The temperature is 30*c, humidity is 23%.
+The temperature is 30*C, humidity is 40%.
+The best sleeping bag is Summer type insulated with Down.
 
-The temperature is 20*c, humidity is 23%.
+The temperature is 20*C, humidity is 40%.
+The best sleeping bag is 3-Season type insulated with Down.
 
-The temperature is 15*c, humidity is 23%.
+The temperature is 15*C, humidity is 40%.
+The best sleeping bag is 3-Season type insulated with Down.
 
-The temperature is 12*c, humidity is 23%.
+The temperature is 12*C, humidity is 40%.
+The best sleeping bag is Winter type insulated with Down.
+
+Invalid input!
+
+The temperature is 100*C, humidity is 23%.
+The best sleeping bag is Summer type insulated with Down.
+
+The temperature is 35*C, humidity is 23%.
+The best sleeping bag is Summer type insulated with Down.
+
+The temperature is 30*C, humidity is 23%.
+The best sleeping bag is Summer type insulated with Down.
+
+The temperature is 20*C, humidity is 23%.
+The best sleeping bag is 3-Season type insulated with Down.
+
+The temperature is 15*C, humidity is 23%.
+The best sleeping bag is 3-Season type insulated with Down.
+
+The temperature is 12*C, humidity is 23%.
+The best sleeping bag is Winter type insulated with Down.
 
 Invalid input!
