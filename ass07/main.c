@@ -1,4 +1,12 @@
-// TODO: Add file-level documentaion
+/******************************************************************************
+* @filename main.c
+* @author   Timothy Wong
+* @SIT mail 2201258@sit.singaporetech.edu.sg 
+* @course   RSE1201
+* @date     18/10/2022
+* @brief    This file contains encryption and decription tools. It gets the key
+			from the header file q and encrypts and decrypts them accordingly.
+******************************************************************************/
 
 #include <stdio.h>		// file and console I/O
 
@@ -9,7 +17,6 @@ int main(void)
 {
 	#ifdef ENCRYPT
 
-	// TODO: encrypt characters from plain.txt and put them in file cipher.txt
 	FILE *plain;
 	char ch;
 	long unsigned int ctr = 0;
@@ -20,16 +27,19 @@ int main(void)
 		printf("cannot open file");
 	}
 	else {
-		do {
+		while (1) {
 			ch = (char) fgetc(plain);
-			encrypt(&ch, key[ctr]);
-			ctr++;
-			if (ctr > (sizeof(key) - 1)) {
-				ctr = 0;
+			if (ch != EOF) {
+				encrypt(&ch, key[ctr]);
+				ctr++;
+				if (ctr > (sizeof(key) - 1)) { //loop to the first letter of the key
+					ctr = 0;
+				}
+			}
+			else {
+				break;
 			}
 		}
-		while (ch != EOF);
-
 		fclose(plain);
 	}
 
@@ -37,31 +47,39 @@ int main(void)
 
 	FILE *encryptedOutput;
 	char *ch;
+	char detectChar = 0;
 	int wordCounter = 0;
 	long unsigned int ctr = 0;
 
-	// encryptedOutput = fopen("actual-output.txt", "r");
-	encryptedOutput = fopen("expected-cipher.txt", "r");
+	encryptedOutput = fopen("actual-output.txt", "r");
 	
 	if (NULL == encryptedOutput) {
 		printf("cannot open file");
 	}
 	else {
-		while (*ch != ';') {
-			// for (int  i = 0; i < 500; i++) {
+		while (1) {
 			char newRead = (char) fgetc(encryptedOutput);
 			ch = &newRead;
-			decrypt(ch, key[ctr]);
+			if (*ch != EOF) {
+				decrypt(ch, key[ctr]);
+			}
+			else {
+				break;
+			}
 			ctr++;
-			if (ctr > (sizeof(key) - 1)) {
+			if (ctr > (sizeof(key) - 1)) { //loop to the first letter of the key
 				ctr = 0;
 			}
-			if (*ch == ' ' || *ch == '\n' || *ch == '\r' || *ch == '\t') {
-				wordCounter++;
+			if ((*ch == ' ' || *ch == '\n' || *ch == '\r' || *ch == '\t')) { //check if decrypted key is a whitespace, tab, newline, etc
+				detectChar = 0;
+			}
+			else {
+				if (!detectChar) { //if first char is a non newline, tab, or whitespace, etc. OR previous char is a newline, tab, or whitespace, etc. THEN add word to counter
+					wordCounter++;
+				}
+				detectChar = 1;
 			}
 		}
-		// while (*ch != ';');
-
 		fclose(encryptedOutput);
 	}
 
