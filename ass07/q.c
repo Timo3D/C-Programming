@@ -15,7 +15,8 @@ void encrypt(char* letter, char key) {
     if (newChar > 127) {
         newChar -= 128;
     }
-    printf("%c", newChar);
+    *letter = (char) newChar;
+    printf("%c", *letter);
 }
 
 // Decrypt a single letter of an input text.
