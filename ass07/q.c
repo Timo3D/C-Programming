@@ -16,7 +16,7 @@ void encrypt(char* letter, char key) {
         newChar -= 128;
     }
     *letter = (char) newChar;
-    printf("%c", *letter);
+    //printf("%c", *letter);
 }
 
 // Decrypt a single letter of an input text.
@@ -26,5 +26,5 @@ void decrypt(char* letter, char key) {
         newChar += 128;
     }
     *letter = (char) newChar;
-    printf("%c", *letter);
+    //printf("%c", *letter);
 }
