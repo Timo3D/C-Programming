@@ -1,11 +1,18 @@
-// TODO: Add file-level documentation.
+/*!
+@file gamelib.c
+@author Timothy Wong
+@course RSE1201
+@week 10
+@lab09
+@date 9/11/2022
+@brief  Accordion is a solitaire game for one player using a single deck of playing cards. It is so named
+        because it looks like accordion pleats which have to be ironed out. 
+*//*_____________________________________________________________*/
 
 #include <stdio.h>
 #include "gamelib.h"
 
-
-// TODO: Add function-level documentation.
-void del_card(Card game[], CardIndex position)
+void del_card(Card game[], CardIndex position) // Replaces a card from the deck and shifts the elements of the array to replaced card.
 {
 	if ((game[position].suit == game[position - 3].suit) || (game[position].rank == game[position - 3].rank)) game[position - 3] = game[position];
 	else game[position - 1] = game[position];
@@ -16,8 +23,7 @@ void del_card(Card game[], CardIndex position)
 	return;
 }
 
-// TODO: Add function-level documentation.
-void load_game(const char str[], Card game[])
+void load_game(const char str[], Card game[]) // Loads a game by reading it from text[] into the array of cards.
 {
 	int i = 0;
 	while (str[i * 3] != '0') {
@@ -30,8 +36,7 @@ void load_game(const char str[], Card game[])
 	return;
 }
 
-// TODO: Add function-level documentation.
-void play_game(Card game[])
+void play_game(Card game[]) // Plays a game.
 {
 		unsigned char i = 0;
 		while (game[i].suit != '0') {
@@ -45,8 +50,7 @@ void play_game(Card game[])
 	return;
 }
 
-// TODO: Add function-level documentation.
-void display_game(const Card game[])
+void display_game(const Card game[]) // Displays the sequence of cards.
 {
 	int i = 0;
 	while (game[i].suit != '0') {
