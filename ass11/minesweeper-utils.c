@@ -15,10 +15,10 @@ typedef struct Map {
 } Map;
 
 Map* create_map(unsigned short int width, unsigned short int height) {
-    printf("%d %d\n", width, height);
     Map* ptrMap = (Map*) malloc(sizeof(width * height));
-    ptrMap->width = width;
-    ptrMap->height = height;
+    // ptrMap->width = width;
+    // ptrMap->height = height;
+    ptrMap->grid[width][height];
     return ptrMap;
 }
 
@@ -27,8 +27,9 @@ void destroy_map(Map* map) {
 }
 
 void set_tile(Map* map, unsigned short int column, unsigned short int row, char state, bool is_visible) {
-    map->grid[column][row].is_visible = is_visible;
-    map->grid[column][row].state = state;
+    printf("hello\n");
+    // map->grid = 0;
+    // map->grid
     return;
 }
 
