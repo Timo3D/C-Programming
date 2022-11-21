@@ -14,8 +14,6 @@ typedef struct Map {
     Row* grid;
 } Map;
 
-
-
 Map* create_map(unsigned short int width, unsigned short int height) {
     printf("%d %d\n", width, height);
     Map* ptrMap = (Map*) malloc(sizeof(width * height));
