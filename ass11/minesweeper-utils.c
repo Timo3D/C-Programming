@@ -28,6 +28,7 @@ void destroy_map(Map* map) {
 
 void set_tile(Map* map, unsigned short int column, unsigned short int row, char state, bool is_visible) {
     printf("hello\n");
+    
     // map->grid = 0;
     // map->grid
     return;
